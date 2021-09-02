@@ -1,0 +1,17 @@
+  {
+    "manifest_version": 2,
+    "name": "Binge on Linux!",
+    "version": "1.0",
+    "description": "Stream Foxtel Binge shows on Linux",
+    "content_scripts": [
+    {
+        "matches": ["http://binge.com.au/*", "https://binge.com.au/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }
+    ],
+    "permissions": [
+      "storage",
+      "activeTab"
+    ]
+  }
